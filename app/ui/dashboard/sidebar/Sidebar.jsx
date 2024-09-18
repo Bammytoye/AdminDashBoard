@@ -1,4 +1,5 @@
 import React from 'react'
+import MenuLink from './menuLink/MenuLink';
 import { 
     MdAnalytics,
     MdAttachMoney,
@@ -11,6 +12,7 @@ import {
     MdWork,
     
 } from 'react-icons/md';
+import Image from 'next/image';
 
 const Sidebar = () => {
 
@@ -78,7 +80,29 @@ const Sidebar = () => {
     ]
 
     return (
-        <div>Sidebar</div>
+        <div className='sticky top-10'>
+            <div className='flex items-center gap-4 mb-5'>
+                <Image className='rounded-full object-cover' src='/bg.png' alt='' width={50} height={50}/>
+                
+                <div className='flex flex-col'>
+                    <span className='font-bold'>Bammy Toye</span>    
+                    <span className='text-sm text-[#b7bac1]'>Administrator</span>    
+                </div>
+            </div>
+
+            <ul className='list-none pl-0'>
+                {sideBarMenu.map((cart)=> (
+                    <li key={cart.title}>
+                        <span className='text-[#b7bac1] font-bold text-[13px] my-2 mx-0'>
+                            {cart.title}
+                        </span>
+                        {cart.list.map((item) => (
+                            <MenuLink item={item} key={item.title} />
+                        ))}
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
