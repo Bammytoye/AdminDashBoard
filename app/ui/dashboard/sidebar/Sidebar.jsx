@@ -10,7 +10,7 @@ import {
     MdPeople, 
     MdSupervisedUserCircle,
     MdWork,
-    
+    MdLogout
 } from 'react-icons/md';
 import Image from 'next/image';
 
@@ -90,10 +90,10 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            <ul className='list-none pl-0'>
+            <ul className='list-none pl-0 cursor-pointer'>
                 {sideBarMenu.map((cart)=> (
                     <li key={cart.title}>
-                        <span className='text-[#b7bac1] font-bold text-[13px] my-2 mx-0'>
+                        <span className='text-[#b7bac1] font-bold text-[13px] my-2 mx-0 cursor-pointer'>
                             {cart.title}
                         </span>
                         {cart.list.map((item) => (
@@ -102,6 +102,11 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
+
+            <button className='p-5 my-1 mx-0 flex items-center gap-3 cursor-pointer rounded-lg bg-none hover:bg-[#2e374a] border-none w-full'>
+                <MdLogout />
+                Log Out
+            </button>
         </div>
     )
 }
