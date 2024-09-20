@@ -2,6 +2,16 @@ import Image from 'next/image';
 import React from 'react';
 
 const Transaction = () => {
+
+    const details = [
+        { name: 'Bammy Toye', status: 'Pending', date: '20/09/2024', amount: '40, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
+        { name: 'Mulla', status: 'Done', date: '02/09/2024', amount: '20, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
+        { name: 'Dr. Kunle', status: 'Processing', date: '20/09/2024', amount: '24, 000, 000 : 00', statusColor: 'bg-[#b4e03b]' },
+        { name: 'Makavelis', status: 'Pending', date: '28/09/2024', amount: '73, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
+        { name: 'Doyin', status: 'Done', date: '18/07/2024', amount: '140, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
+        { name: 'Dcns Grace', status: 'Successful', date: '18/07/2024', amount: '110, 000, 000 : 00', statusColor: 'bg-green-500' },
+    ]
+    
     return (
         <div className='bg-[#182237] p-6 rounded-xl'>
             <h2 className='mb-2 text-md font-light text-[#b7bac1]'>
@@ -19,14 +29,7 @@ const Transaction = () => {
                 </thead>
 
                 <tbody className='cursor-pointer'>
-                    {[
-                        { name: 'Bammy Toye', status: 'Pending', date: '20/09/2024', amount: '40, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
-                        { name: 'Mulla', status: 'Done', date: '02/09/2024', amount: '20, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
-                        { name: 'Dr. Kunle', status: 'Processing', date: '20/09/2024', amount: '24, 000, 000 : 00', statusColor: 'bg-[#b4e03b]' },
-                        { name: 'Makavelis', status: 'Pending', date: '28/09/2024', amount: '73, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
-                        { name: 'Doyin', status: 'Done', date: '18/07/2024', amount: '140, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
-                        { name: 'Dcns Grace', status: 'Successful', date: '18/07/2024', amount: '110, 000, 000 : 00', statusColor: 'bg-green-500' },
-                    ].map((transaction, index) => (
+                    {details.map((transaction, index) => (
                         <tr key={index} className='border-b  hover:bg-gray-900 text-white border-t border-[#2c3a52]'>
                             <td className='px-4 py-2'>
                                 <div className='flex items-center gap-3'>
