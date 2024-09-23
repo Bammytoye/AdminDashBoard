@@ -4,7 +4,7 @@ import { MdPlayCircle, MdReadMore } from 'react-icons/md';
 
 const RightBar = () => {
     return (
-        <div className=''>
+        <div className='sticky'>
             <div className='relative bg-[#182237] p-5 rounded-xl mb-5'>
                 <div className=''>
                     <Image 

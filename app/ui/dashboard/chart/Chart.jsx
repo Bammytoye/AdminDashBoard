@@ -42,7 +42,7 @@ const data = [
 
 const Chart = () => {
     return (
-        <div className='h-[450px] p-5 bg-[#182237] rounded-lg'>
+        <div className='h-[350px] p-5 bg-[#182237] rounded-lg'>
             <h2 className='text-sm text-[#b7bac1] mb-2'>
                 Weekly Recap
             </h2>

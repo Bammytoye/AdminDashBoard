@@ -4,11 +4,11 @@ import React from 'react';
 const Transaction = () => {
 
     const details = [
-        { name: 'Bammy Toye', status: 'Pending', date: '20/09/2024', amount: '40, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
-        { name: 'Mulla', status: 'Done', date: '02/09/2024', amount: '20, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
-        { name: 'Dr. Kunle', status: 'Processing', date: '20/09/2024', amount: '24, 000, 000 : 00', statusColor: 'bg-[#b4e03b]' },
-        { name: 'Makavelis', status: 'Pending', date: '28/09/2024', amount: '73, 000, 000 : 00', statusColor: 'bg-[#f7cb7375]' },
-        { name: 'Doyin', status: 'Done', date: '18/07/2024', amount: '140, 000, 000 : 00', statusColor: 'bg-[#afd6ee75]' },
+        { name: 'Bammy Toye', status: 'Pending', date: '20/09/2024', amount: '40, 000, 000 : 00', statusColor: 'bg-orange-500' },
+        { name: 'Mulla', status: 'Done', date: '02/09/2024', amount: '20, 000, 000 : 00', statusColor: 'bg-blue-500' },
+        { name: 'Dr. Kunle', status: 'Processing', date: '20/09/2024', amount: '24, 000, 000 : 00', statusColor: 'bg-pink-500' },
+        { name: 'Makavelis', status: 'Pending', date: '28/09/2024', amount: '73, 000, 000 : 00', statusColor: 'bg-orange-500' },
+        { name: 'Doyin', status: 'Done', date: '18/07/2024', amount: '140, 000, 000 : 00', statusColor: 'bg-blue-500' },
         { name: 'Dcns Grace', status: 'Successful', date: '18/07/2024', amount: '110, 000, 000 : 00', statusColor: 'bg-green-500' },
     ]
     
