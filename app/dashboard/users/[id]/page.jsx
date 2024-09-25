@@ -4,9 +4,9 @@ import Image from 'next/image'
 const SingleUserPage = () => {
     return (
         <div className='flex gap-10 mt-5'>
-            <div className='w-1/4 bg-[#182237] p-5 rounded-lg font-bold text-center text-[#b7bac1] max-h-[270px]'>
+            <div className='w-1/4 bg-[#182237] p-5 rounded-lg font-bold text-center text-[#b7bac1] max-h-[330px]'>
                 <div className='relative rounded-lg overflow-hidden mb-5'>
-                    <Image src='/bg.png' alt='' width={300} height={500} />
+                    <Image src='/folashade.jpg' alt='' width={300} height={500} />
                 </div>
                 FolaShade
             </div>
@@ -16,7 +16,7 @@ const SingleUserPage = () => {
                     <label htmlFor="" className='text-sm text-[#b7bac1] px-1'>
                         Username
                     </label>
-                    <input className='px-4 py-3 text-sm rounded-md bg-[#151c2c] text-white my-2' type="text" name='name' placeholder='Fola' />
+                    <input className='px-4 py-3 text-sm rounded-md bg-[#151c2c] text-white my-2' type="text" name='name' placeholder='Toye Favourite Girl' />
 
                     <label htmlFor="" className='text-sm text-[#b7bac1] px-1'>
                         Email
