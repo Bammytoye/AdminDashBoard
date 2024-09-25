@@ -15,7 +15,7 @@ const UserPage = () => {
                 </Link>
             </div>
 
-            <table className='w-[750px] text-[12px]'>
+            <table className='w-[900px] text-[12px]'>
                 <thead>
                     <tr>
                         <td className='p-3'>Name</td>
@@ -40,7 +40,7 @@ const UserPage = () => {
                         <td className='p-3'>passive</td>
                         <td>
                             <div className='flex items-center gap-4'>
-                                <Link href='/'>
+                                <Link href='/dashboard/users/single'>
                                     <button className='px-2 py-2 bg-[#49db3b] hover:bg-[#3b7530] text-white border-none rounded-lg cursor-pointer'>
                                         View
                                     </button>

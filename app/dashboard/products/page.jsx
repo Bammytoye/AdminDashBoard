@@ -41,7 +41,7 @@ const ProductsPage = () => {
                         <td className='p-3'>70</td>
                         <td>
                             <div className='flex items-center gap-4'>
-                                <Link href='/'>
+                                <Link href='/dashboard/product/single'>
                                     <button className='px-2 py-2 bg-[#49db3b] hover:bg-[#3b7530] text-white border-none rounded-lg cursor-pointer'>
                                         View
                                     </button>
