@@ -5,11 +5,9 @@ import Image from 'next/image'
 import Pagination from '../../ui/dashboard/pagination/Pagination'
 import { fetchUsers } from '../../lib/data'
 
-const UserPage = async () => {
-    const users = await fetchUsers();
-
-    console.log(users);
-    
+const UserPage = async ({ SearchParams }) => {
+    const q = SearchParams?.q || "";
+    const users = await fetchUsers(q);
 
     return (
         <div className='bg-[#182237] p-3 rounded-[10px] mt-5'>
@@ -43,7 +41,7 @@ const UserPage = async () => {
                             </div>
                         </td>
                         <td className='p-3'>{user.email}</td>
-                        <td className='p-3'>{user.createdAt}</td>
+                        <td className='p-3'>{user.createdAt?.toString().slice(4, 16)}</td>
                         <td className='p-3'>{user.isAdmin ? 'Admin'  : 'Client'}</td>
                         <td className='p-3'>{user.isActive ? 'Active'  : 'Passive'}</td>
                         <td>
