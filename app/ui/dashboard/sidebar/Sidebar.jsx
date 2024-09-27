@@ -82,7 +82,7 @@ const Sidebar = () => {
     return (
         <div className='sticky top-10'>
             <div className='flex items-center gap-4 mb-5'>
-                <Image className='rounded-full object-cover' src='/bg.png' alt='' width={50} height={50}/>
+                <Image className='rounded-full object-cover cursor-pointer' src='/folashade.jpg' alt='' width={50} height={50}/>
                 
                 <div className='flex flex-col'>
                     <span className='font-bold'>Bammy Toye</span>    

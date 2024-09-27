@@ -6,9 +6,9 @@ const SingleUserPage = () => {
         <div className='flex gap-10 mt-5'>
             <div className='w-1/4 bg-[#182237] p-5 rounded-lg font-bold text-center text-[#b7bac1] max-h-[330px]'>
                 <div className='relative rounded-lg overflow-hidden mb-5'>
-                    <Image src='/folashade.jpg' alt='' width={300} height={500} />
+                    <Image src='/bg.png' alt='' width={300} height={500} />
                 </div>
-                FolaShade
+                Name
             </div>
 
             <div className='w-3/4 bg-[#182237] p-5 rounded-md'>

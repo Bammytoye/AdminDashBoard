@@ -1,11 +1,11 @@
-const { Mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
-const UserSchema = new Mongoose.Schema ( {
+const UserSchema = new mongoose.Schema ({
     username: {
         type: String,
         required: true,
         unique: true,
-        min: 0,
+        min: 3,
         max: 20,
     },
 
@@ -43,7 +43,7 @@ const UserSchema = new Mongoose.Schema ( {
     },
 }, {timestamps: true});
 
-const ProductSchema = new Mongoose.Schema ( {
+const ProductSchema = new mongoose.Schema ( {
     itemName: {
         type: String,
         required: true,
@@ -88,5 +88,5 @@ const ProductSchema = new Mongoose.Schema ( {
     }, {timestamps: true}
 );
 
-export const User = Mongoose.models.User || Mongoose.model('User', UserSchema )
-export const Product = Mongoose.models.Product || Mongoose.model('Product', ProductSchema )
+export const User = mongoose.models.User || mongoose.model('User', UserSchema )
+export const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema )
