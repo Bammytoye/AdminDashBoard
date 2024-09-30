@@ -3,11 +3,10 @@ import Search from '../../ui/dashboard/search/Search'
 import Link from 'next/link'
 import Image from 'next/image'
 import Pagination from '../../ui/dashboard/pagination/Pagination'
-import { fetchUsers } from '../../lib/data'
+// import { fetchUsers } from '../../lib/data'
 
-const UserPage = async ({ SearchParams }) => {
-    const q = SearchParams?.q || "";
-    const users = await fetchUsers(q);
+const UserPage = async () => {
+    // const users = await fetchUsers();
 
     return (
         <div className='bg-[#182237] p-3 rounded-[10px] mt-5'>
@@ -32,7 +31,7 @@ const UserPage = async ({ SearchParams }) => {
                 </thead>
 
                 <tbody>
-                {users.map(user=>(
+                {/* {users.map(user=>(
                     <tr key={user.id}>
                         <td className='p-3'>
                             <div className='flex gap-3 items-center'>
@@ -57,7 +56,7 @@ const UserPage = async ({ SearchParams }) => {
                             </div>
                         </td>
                     </tr>
-                ))}
+                ))} */}
                 </tbody>
             </table>
             <Pagination />
