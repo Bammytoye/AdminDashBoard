@@ -10,17 +10,16 @@ const Search = ({placeholder}) => {
     const pathName = usePathname();
 
     const handleSearch = (e) => {
-
         const params = new URLSearchParams(SearchParams);
-        
-        if(e.target.value) {
-                params.set("q", e.target.value);
-            } else {
-                params.delete("q");
-            }
-        replace(`${pathName}?${params}`);
-    }
 
+        if (e.target.value) {
+            e.target.value.length > 2 && params.set('q', e.target.value)
+        } else {
+            params.delete('q')
+        }
+        replace(`${pathName}?${params}`)
+    }
+    
     return (
         <div className='flex items-center gap-5 bg-[#36508a] p-3 rounded-md max-w-[350px]'>
             <MdSearch />

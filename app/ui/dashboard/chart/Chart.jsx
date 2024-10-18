@@ -31,7 +31,7 @@ const data = [
     {
         name: 'Saturday',
         visit: 2390,
-        click: 3800,
+        click: 9000,
     },
     {
         name: 'Sunday',

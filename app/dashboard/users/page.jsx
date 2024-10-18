@@ -3,10 +3,10 @@ import Search from '../../ui/dashboard/search/Search'
 import Link from 'next/link'
 import Image from 'next/image'
 import Pagination from '../../ui/dashboard/pagination/Pagination'
-import { fetchUsers } from '../../lib/data'
+import { fetchUsers } from '../../lib/data';
 
-const UserPage = async ({ SearchParams }) => {
-    const q = SearchParams?.q || "";
+const UserPage = async ({SearchParams}) => {
+    const q = SearchParams?.q || '';
     const users = await fetchUsers(q);
 
     return (
