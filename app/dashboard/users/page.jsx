@@ -5,12 +5,8 @@ import Image from 'next/image'
 import Pagination from '../../ui/dashboard/pagination/Pagination'
 import { fetchUsers } from '../../lib/data';
 
-const UserPage = async ({SearchParams}) => {
-    const q = SearchParams?.q || '';
-    const page = SearchParams?.page || 1;
-    const users = await fetchUsers(q, page);
-
-    const count = users.length
+const UserPage = async () => {
+    const users = await fetchUsers();
 
     return (
         <div className='bg-[#182237] p-3 rounded-[10px] mt-5'>
@@ -63,7 +59,7 @@ const UserPage = async ({SearchParams}) => {
                 ))}
                 </tbody>
             </table>
-            <Pagination count={count}/>
+            <Pagination />
         </div>
     )
 }
